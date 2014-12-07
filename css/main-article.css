@@ -1,0 +1,120 @@
+/*-----CONTENTS-------
+1. Body and Elements Reset
+2. Article Width and Positioning
+3. Jumbotron
+4. Summary Style
+5. Text and Image Style
+6. Banner Styling
+--------------------*/
+/* Body and Elements Reset */
+body {
+  padding: 0; }
+
+h1,
+p {
+  margin: 0; }
+
+/* Article Width and Navigation Positioning */
+.nav-wrapper,
+.article {
+  display: inline-block; }
+
+.article {
+  max-width: 60%;
+  margin-left: 20%;
+  padding: 0; }
+  @media (max-width: 800px) {
+    .article {
+      max-width: 90%;
+      margin-left: 5%; } }
+  @media (max-width: 470px) {
+    .article {
+      min-width: 470px; } }
+
+/* Jumbotron */
+.jumbotron {
+  height: 450px;
+  padding-top: 170px;
+  box-sizing: border-box;
+  background: url("../img/article1/header.jpg") center top;
+  border: 10px solid black; }
+  .jumbotron h1 {
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Adamina', serif;
+    background: url("../img/main-header-bgrd.png");
+    padding: 5px; }
+
+/* Summary Style */
+.summary-wrapper {
+  /*background: #DDD;*/
+  padding: 16px 40px;
+  border-top: 1px solid #AAA;
+  border-bottom: 2px solid #AAA; }
+  .summary-wrapper p {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.833333em;
+    font-style: italic;
+    line-height: 39px;
+    text-align: center;
+    color: #111; }
+
+/* Text and Image Style */
+.text-wrapper p {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5em;
+  line-height: 32px;
+  color: #222; }
+  .text-wrapper p:first-child {
+    margin-top: 39px; }
+    .text-wrapper p:first-child:first-letter {
+      float: left;
+      color: #C60C30;
+      font-size: 3em;
+      line-height: 60px;
+      padding-top: 3px;
+      padding-right: 8px;
+      padding-left: 3px;
+      font-family: Amadina; }
+.text-wrapper img {
+  width: 100%; }
+
+/* Banner Styling */
+#banner-placeholder {
+  position: fixed;
+  top: 100%;
+  margin-top: -100px;
+  left: 50%;
+  margin-left: -235px; }
+
+#banner-wrapper {
+  width: 470px;
+  height: 100px;
+  border: 1px solid black;
+  position: absolute; }
+  #banner-wrapper #banner-close {
+    position: relative;
+    z-index: 3;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+    margin: 5px;
+    cursor: pointer; }
+  #banner-wrapper #banner-img {
+    z-index: 1;
+    position: relative;
+    top: -32px;
+    left: 0; }
+    #banner-wrapper #banner-img img {
+      z-index: 2;
+      width: 100%;
+      height: 100%; }
+
+/*# sourceMappingURL=main-article.css.map */

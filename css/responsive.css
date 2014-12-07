@@ -1,0 +1,66 @@
+/* Width Adjustments */
+
+@media (max-width: 800px) {
+
+  .thumbnail {
+    width: 33.3333333333%;
+    border-top: 5px solid #000;
+  }
+
+  .thumbnail-text {
+    padding: 8px;
+  }
+
+  .header-logo {
+    margin: 0 0 0 5%;
+  }
+
+  .header-subtitle {
+    margin: 0 0 0 6%;
+  }
+
+}
+
+@media (max-width: 470px) {
+
+  .header-logo {
+    font-size: 2.5em;
+  }
+
+  .header-subtitle {
+    font-size: 1.4em;
+  }
+
+  .thumbnail-text h3 {
+    font-size: 0.8em;
+  }
+
+  .thumbnail-text p {
+    font-size: 0.7em;
+  }
+
+}
+
+@media (max-width: 334px) {
+
+  .logo-wrapper {
+    margin-top: 160px;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+
+  .thumbnail-text h3 {
+    font-size: 1em;
+  }
+
+  .thumbnail-text p {
+    font-size: 0.9em;
+  }
+
+}
+
+
+
+

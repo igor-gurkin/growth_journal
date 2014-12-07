@@ -1,0 +1,236 @@
+/*-----CONTENTS-------
+1. Variables
+2. Mixins
+2. Body Color
+3. Cascading height (for relative height)
+4. Header Margins Reset
+5. Jumbotron
+6. Navigation - Thumbnails Positioning and Styles
+7. Navigation - Thumbnails Pictures
+8. Footer
+9. Font Styles
+--------------------*/
+
+
+/* Variables */
+
+$jumbotron_height: 463px;
+$thumbnail_wrapper_height: 157px;
+$footer_height: 25px;
+$journal_height: $jumbotron_height + $thumbnail_wrapper_height + $footer_height;
+
+
+/* Mixins */
+
+@mixin centered-div {
+  position: absolute;
+  top: 50%;
+  margin-top: -$journal_height/2;
+  height: $journal_height;
+}
+
+
+/* Body Color */
+
+body {
+  background: #000;
+}
+
+
+/* Cascading Height */
+
+html,
+body {
+  height: 100%;
+}
+
+.journal_wrapper_outer {
+  position: relative;
+  height: 100%;
+}
+
+.journal_wrapper_inner {
+  @include centered-div;
+}
+
+
+/* Header Margins Fix */
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+
+
+/* Jumbotron */
+
+.jumbotron {
+  padding: 0;
+  height: $jumbotron_height;
+  max-width: 100%;
+  background: url('../img/cover.jpg') no-repeat center bottom;
+  background-size: cover;
+  border-bottom: 10px solid black;
+  box-sizing: border-box;
+}
+
+.logo-wrapper {
+  width: 100%;
+  margin-top: 190px;
+  padding: 10px;
+  display: inline-block;
+  /*background-color: rgba(255, 255, 255, .5);*/
+  background: url('../img/main-header-bgrd.png');
+  box-sizing: border-box;
+}
+
+.header-logo {
+  margin: 0 0 0 20%;
+  color: black;
+  font-size: 3.6em;
+}
+
+.header-subtitle {
+  margin: 0 0 0 21%;
+  color: black;
+  font-size: 2em;
+}
+
+
+
+/* Navigation - Thumbnails Positioning and Styles */
+
+.thumbnail-wrapper {
+  width: 100%;
+  height: $thumbnail_wrapper_height;
+  background: #000;
+}
+
+.thumbnail {
+  display: inline-block;
+  float: left;
+  width: 16.6666666667%;
+  height: 100%;
+  border-left: 5px solid #000;
+  border-right: 5px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.thumbnail-text {
+  height: 100%;
+  padding: 12px;
+  background: url('../img/thumb/thumb-link-bgrd.png');
+  margin-top: 95px;
+  text-align: center;
+  transition: margin-top 0.5s ease;
+  h3 {
+    display: inline-block;
+    margin-bottom: 17px;
+  }
+  &:hover {
+    margin-top: 0px;
+  }
+}
+
+.thumbnail-link {
+  &:link {
+    text-decoration: none;
+    color: black;
+  }
+  &:visited {
+    text-decoration: none;
+    color: black;
+  }
+  &:active {
+    text-decoration: none;
+    color: #666;
+  }
+}
+
+
+/* Navigation - Thumbnails Pictures */
+
+.article-1 {
+  background: url('../img/thumb/editorial-thumb.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.article-2 {
+  background: url('../img/thumb/growth-thumb.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.article-3 {
+  background: url('../img/thumb/leffe-thumb.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.article-4 {
+  background: url('../img/thumb/party-thumb.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.article-5 {
+  background: url('../img/thumb/food-thumb.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.article-6 {
+  background: url('../img/thumb/bw-thumb.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+
+
+/* Footer */
+
+.footer {
+  display: inline-block;
+  height: $footer_height;
+  width: 100%;
+  background: #000;
+  p {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 0.8em;
+    color: #FFF;
+  }
+}
+
+
+
+/* Font Styles */
+
+.header-logo {
+  font-family: 'Courgette', cursive;
+}
+
+.header-subtitle {
+  font-family: 'Courgette', cursive;
+}
+
+.thumbnail-text { 
+  h3 {
+    font-family: 'Adamina', serif;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  p {
+    font-family: 'Muli', sans-serif;
+    color: #444;
+    font-size: 0.9em;
+  }
+}
+
+
+
+
+
+
+
+
+
+

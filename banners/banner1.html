@@ -1,0 +1,16 @@
+<div id="banner-wrapper">
+  <div id="banner-close">
+    <p><strong>x</strong></p>
+  </div>
+  <div id="banner-img">
+    <img src="../img/banner.png" alt="banner-img">
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+    $('#banner-close').click(function() {
+      $('#banner-wrapper').css('display', 'none');
+      /*$('#banner-wrapper').fadeOut();*/
+  });
+});
+</script>

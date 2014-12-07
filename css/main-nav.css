@@ -1,0 +1,141 @@
+/*-----CONTENTS-------
+1. Nav-Wrapper Positioning
+2. Thumbnails Layout
+3. Thumbnails Images
+4. Thumbnails Links Layout and Style
+5. Home-Content Box
+5. Font Styles
+--------------------*/
+/* Nav-Wrapper Positioning */
+.nav-wrapper {
+  position: fixed;
+  margin-top: 15px;
+  transition: margin-left 0.3s ease; }
+
+.hidden {
+  margin-left: -200px; }
+
+/* Thumbnails Layout */
+.thumbnail-wrapper {
+  background: #000;
+  height: 600px;
+  width: 200px;
+  border-radius: 0px 20px 20px 0px; }
+
+.thumbnail {
+  display: inline-block;
+  float: left;
+  width: 90%;
+  height: 88px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-left: 10px; }
+  .thumbnail:first-child {
+    margin-top: 10px;
+    border-radius: 0px 15px 0px 0px; }
+  .thumbnail:last-child {
+    margin-bottom: 10px;
+    border-radius: 0px 0px 15px 0px; }
+
+/* Thumnbnails Images*/
+.article-1 {
+  background: url("../img/thumb/editorial-thumb.jpg") no-repeat center center;
+  background-size: cover; }
+
+.article-2 {
+  background: url("../img/thumb/growth-thumb.jpg") no-repeat center center;
+  background-size: cover; }
+
+.article-3 {
+  background: url("../img/thumb/leffe-thumb.jpg") no-repeat center center;
+  background-size: cover; }
+
+.article-4 {
+  background: url("../img/thumb/party-thumb.jpg") no-repeat center center;
+  background-size: cover; }
+
+.article-5 {
+  background: url("../img/thumb/food-thumb.jpg") no-repeat center center;
+  background-size: cover; }
+
+.article-6 {
+  background: url("../img/thumb/bw-thumb.jpg") no-repeat center center;
+  background-size: cover; }
+
+/* Thumbnail Links Layout and Style */
+.thumbnail-text {
+  background: url("../img/thumb/thumb-link-bgrd.png");
+  margin-top: 38px;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box; }
+  .thumbnail-text h3 {
+    padding: 0;
+    margin: 0; }
+
+.thumbnail-link:link {
+  text-decoration: none;
+  color: black; }
+.thumbnail-link:visited {
+  text-decoration: none;
+  color: black; }
+.thumbnail-link:hover {
+  text-decoration: none;
+  color: #666; }
+.thumbnail-link:active {
+  text-decoration: none;
+  color: #666; }
+
+/* Home-Content Box */
+.home-content {
+  background: #000;
+  display: inline-block;
+  width: 216px;
+  border-radius: 0 0px 10px 10px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: -315px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  /* IE8 */ }
+  .home-content h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+
+.home-content
+.home,
+.contents {
+  display: inline-block;
+  padding: 2px;
+  margin: 2px;
+  width: 100px;
+  box-sizing: border-box;
+  cursor: pointer; }
+
+.home {
+  border-right: 1px white dotted; }
+
+/* Font Styles */
+.thumbnail-text h3 {
+  font-family: 'Adamina', serif;
+  text-transform: uppercase;
+  font-size: 1em; }
+
+.home-content h3 {
+  font-family: 'Adamina', serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: white; }
+
+.home a:link {
+  text-decoration: none;
+  color: black; }
+.home a:visited {
+  text-decoration: none;
+  color: black; }
+
+/*# sourceMappingURL=main-nav.css.map */
